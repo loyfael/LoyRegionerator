@@ -22,7 +22,7 @@
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.19.3-R0.1-SNAPSHOT</version>
+      <version>1.21.7-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -81,129 +81,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>br.net.fabiozumbi12.RedProtect</groupId>
-      <artifactId>RedProtect-Core</artifactId>
-      <version>7.7.3</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>br.net.fabiozumbi12.RedProtect</groupId>
-      <artifactId>RedProtect-Spigot</artifactId>
-      <version>7.7.3</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.plotsquared</groupId>
-      <artifactId>PlotSquared-Core</artifactId>
-      <version>6.11.1</version>
-      <scope>provided</scope>
-      <!--
-        Due to the way P^2 is set up, Guice must be present to compile against their core
-        on certain setups. Since it hasn't historically caused problems (unlike WG and RP),
-        don't exclude transitive dependencies for now.
-       -->
-    </dependency>
-    <dependency>
-      <groupId>world.bentobox</groupId>
-      <artifactId>bentobox</artifactId>
-      <version>2.7.0</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.griefdefender</groupId>
-      <artifactId>api</artifactId>
-      <version>2.1.1-SNAPSHOT</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <!-- JitPack -->
-    <dependency>
-      <groupId>com.github.cjburkey01</groupId>
-      <artifactId>ClaimChunk</artifactId>
-      <version>0.0.22</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>com.github.angeschossen</groupId>
       <artifactId>LandsAPI</artifactId>
       <version>7.15.20</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.github.TechFortress</groupId>
-      <artifactId>GriefPrevention</artifactId>
-      <version>17.0.0</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.github.elBukkit</groupId>
-      <artifactId>PreciousStones</artifactId>
-      <version>1.17.2</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.github.TownyAdvanced.towny</groupId>
-      <artifactId>towny</artifactId>
-      <version>0.101.1.14</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.github.chrisrnj.Terrainer</groupId>
-      <artifactId>terrainer-core</artifactId>
-      <version>9ab2f53d41</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>

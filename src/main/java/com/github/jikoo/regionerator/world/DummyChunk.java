@@ -18,6 +18,9 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.Player;
+import org.bukkit.generator.structure.GeneratedStructure;
+import org.bukkit.generator.structure.Structure;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
@@ -60,7 +63,22 @@ public class DummyChunk implements Chunk {
 	}
 
 	@Override
-	public @NotNull Entity @NotNull [] getEntities() {
+	public @NotNull Collection<Player> getPlayersSeeingChunk() {
+		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
+	}
+
+	@Override
+	public @NotNull Collection<GeneratedStructure> getStructures(@NotNull Structure structure) {
+		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
+	}
+
+	@Override
+	public @NotNull Collection<GeneratedStructure> getStructures() {
+		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
+	}
+
+	@Override
+	public @NotNull Entity[] getEntities() {
 		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
 	}
 
@@ -87,6 +105,16 @@ public class DummyChunk implements Chunk {
 	@Override
 	public boolean isLoaded() {
 		return this.world.isChunkLoaded(chunkZ, chunkZ);
+	}
+
+	@Override
+	public @NotNull LoadLevel getLoadLevel() {
+		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
+	}
+
+	@Override
+	public boolean isGenerated() {
+		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
 	}
 
 	@Override
